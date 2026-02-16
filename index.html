@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Arguello - Developer</title>
+  
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/retropix" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/index.css" />
+  </head>
+  <body data-theme="dark">
+    <div
+      class="theme-toggle"
+      onclick="toggleTheme()"
+      role="button"
+      tabindex="0"
+      aria-label="Toggle dark mode"
+    >
+      <div class="theme-toggle-circle"></div>
+    </div>
+
+    <div class="container">
+      <header>
+        <!-- <img src="src/images/profile.png" alt="Arguello" class="logo" /> -->
+        <h1>Juan Arguello</h1>
+        <p class="hero-statement">
+          <span class="static">I</span>
+          <span class="typing-wrapper">
+            <span class="typing-text" id="typing-text"></span
+            ><span class="cursor"></span>
+          </span>
+          <span class="static">apps</span>
+        </p>
+        <div class="tech-badges">
+          <span class="badge">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="1em"
+              height="1em"
+              {...props}
+            >
+              <path
+                fill="currentColor"
+                d="M418.2 177.2q-8.1-2.7-16.2-5.1c.9-3.7 1.7-7.4 2.5-11.1c12.3-59.6 4.2-107.5-23.1-123.3c-26.3-15.1-69.2.6-112.6 38.4c-4.3 3.7-8.5 7.6-12.5 11.5c-2.7-2.6-5.5-5.2-8.3-7.7c-45.5-40.4-91.1-57.4-118.4-41.5c-26.2 15.2-34 60.3-23 116.7c1.1 5.6 2.3 11.1 3.7 16.7c-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5c4.5 1.5 9 3 13.6 4.3c-1.5 6-2.8 11.9-4 18c-10.5 55.5-2.3 99.5 23.9 114.6c27 15.6 72.4-.4 116.6-39.1c3.5-3.1 7-6.3 10.5-9.7c4.4 4.3 9 8.4 13.6 12.4c42.8 36.8 85.1 51.7 111.2 36.6c27-15.6 35.8-62.9 24.4-120.5q-1.35-6.6-3-13.5c3.2-.9 6.3-1.9 9.4-2.9c57.7-19.1 99.5-50 99.5-81.7c0-30.3-39.4-59.7-93.8-78.4M282.9 92.3c37.2-32.4 71.9-45.1 87.7-36c16.9 9.7 23.4 48.9 12.8 100.4c-.7 3.4-1.4 6.7-2.3 10c-22.2-5-44.7-8.6-67.3-10.6c-13-18.6-27.2-36.4-42.6-53.1c3.9-3.7 7.7-7.2 11.7-10.7M167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9c-15.6-1.7-31.1-4.2-46.4-7.5c4.4-14.4 9.9-29.3 16.3-44.5c4.6 8.8 9.3 17.5 14.3 26.1m-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8c-5.3 8.3-10.5 16.8-15.4 25.4c-4.9 8.5-9.7 17.2-14.2 26c-6.3-14.9-11.6-29.5-16-43.6m27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7q12.75 18.9 24.3 38.7c11.55 19.8 14.9 26.7 21.7 40.4q-10.05 20.7-21.6 40.8c-7.6 13.3-15.7 26.2-24.2 39c-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4q-13.05-19.05-24.6-39c-11.55-19.95-14.8-26.8-21.5-40.6m180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7c6.4 14.5 12 29.2 16.9 44.3c-15.5 3.5-31.2 6.2-47 8c5.4-8.4 10.5-17 15.5-25.6m14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2q-7.35-12.75-15.3-25.2c16.1 2 31.5 4.7 45.9 8c-4.6 14.8-10 29.2-16.1 43.4M256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8c-19.8-.9-39.7-.9-59.5 0c9.8-12.9 19.9-24.9 29.9-35.8M140.2 57c16.8-9.8 54.1 4.2 93.4 39c2.5 2.2 5 4.6 7.6 7c-15.5 16.7-29.8 34.5-42.9 53.1c-22.6 2-45 5.5-67.2 10.4c-1.3-5.1-2.4-10.3-3.5-15.5c-9.4-48.4-3.2-84.9 12.6-94m-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9c-21.3-6.7-45.5-17.3-63-31.2c-10.1-7-16.9-17.8-18.8-29.9c0-18.3 31.6-41.7 77.2-57.6c5.7-2 11.5-3.8 17.3-5.5c6.8 21.7 15 43 24.5 63.6c-9.6 20.9-17.9 42.5-24.8 64.5m116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3c-11.1 5.3-23.9 5.8-35.3 1.3c-15.9-9.2-22.5-44.5-13.5-92c1.1-5.6 2.3-11.2 3.7-16.7c22.4 4.8 45 8.1 67.9 9.8c13.2 18.7 27.7 36.6 43.2 53.4c-3.2 3.1-6.4 6.1-9.6 8.9m24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3c9.6.4 19.5.6 29.5.6c10.3 0 20.4-.2 30.4-.7c-9.2 12.7-19.1 24.8-29.6 36.4m130.7 30c-.9 12.2-6.9 23.6-16.5 31.3c-15.9 9.2-49.8-2.8-86.4-34.2c-4.2-3.6-8.4-7.5-12.7-11.5c15.3-16.9 29.4-34.8 42.2-53.6c22.9-1.9 45.7-5.4 68.2-10.5c1 4.1 1.9 8.2 2.7 12.2c4.9 21.6 5.7 44.1 2.5 66.3m18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6c-7-21.8-15.6-43.1-25.5-63.8c9.6-20.4 17.7-41.4 24.5-62.9c5.2 1.5 10.2 3.1 15 4.7c46.6 16 79.3 39.8 79.3 58c0 19.6-34.9 44.9-84.8 61.4m-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8s-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8"
+              ></path>
+            </svg>
+
+            React
+          </span>
+
+          <span class="badge">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="1em"
+              height="1em"
+              {...props}
+            >
+              <path
+                fill="currentColor"
+                d="M11.174 22.555c.256.139.531.218.826.218s.59-.08.826-.178l7.848-4.572c.511-.297.826-.851.826-1.445V7.454c0-.593-.315-1.148-.826-1.444l-7.848-4.572a1.75 1.75 0 0 0-1.652 0L3.326 6.01A1.67 1.67 0 0 0 2.5 7.454v9.124c0 .594.315 1.148.826 1.445l2.065 1.188c1.003.494 1.358.494 1.81.494c1.475 0 2.32-.91 2.32-2.474V8.226a.24.24 0 0 0-.235-.237H8.283a.24.24 0 0 0-.236.237v9.005c0 .693-.728 1.386-1.889.792l-2.143-1.247c-.08-.04-.118-.138-.118-.218V7.435c0-.08.039-.179.118-.218l7.848-4.552c.058-.04.157-.04.235 0l7.849 4.552c.078.04.118.119.118.218v9.123c0 .1-.04.178-.118.218l-7.849 4.572c-.059.04-.157.04-.236 0L9.857 20.14c-.059-.04-.138-.06-.197-.02c-.55.317-.649.356-1.18.534c-.118.04-.314.119.079.337zm-.885-8.985c0 1.346.708 2.929 4.15 2.929c2.478 0 3.914-.99 3.914-2.731c0-1.702-1.141-2.158-3.56-2.474c-2.44-.317-2.695-.495-2.695-1.069c0-.475.217-1.108 2.026-1.108c1.613 0 2.222.356 2.459 1.444a.23.23 0 0 0 .216.179h1.042c.06 0 .118-.04.158-.08a.3.3 0 0 0 .059-.178c-.157-1.9-1.396-2.77-3.914-2.77c-2.242 0-3.58.95-3.58 2.553c0 1.721 1.338 2.196 3.481 2.414c2.577.258 2.774.634 2.774 1.148c0 .89-.708 1.267-2.36 1.267c-2.085 0-2.538-.515-2.695-1.564c0-.118-.098-.198-.216-.198h-1.023a.24.24 0 0 0-.236.238"
+              ></path>
+            </svg>
+
+            Node
+          </span>
+          <span class="badge">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+              />
+            </svg>
+            iOS
+          </span>
+          <span class="badge">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24a11.463 11.463 0 00-8.94 0L5.65 5.67c-.19-.29-.55-.38-.84-.22-.3.16-.42.54-.26.85L6.4 9.48A10.78 10.78 0 002 18h20a10.78 10.78 0 00-4.4-8.52zM7 15.25a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5zm10 0a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+              />
+            </svg>
+            Android
+          </span>
+          <span class="badge">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.386z"
+              />
+            </svg>
+            Flutter
+          </span>
+        </div>
+      </header>
+
+      <div class="divider"></div>
+
+      <nav class="nav-container">
+        <div class="nav-item">
+          <button class="nav-button">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+              <line x1="12" y1="18" x2="12.01" y2="18" />
+            </svg>
+            Projects
+          </button>
+          <div class="dropdown">
+            <a
+              href="https://openvino.exchange"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="dropdown-item"
+            >
+            
+              <span class="item-text">
+                <strong>Openvino Exchange</strong>
+                <small> Decentralized Exchange</small>
+              </span>
+            </a>
+            <a
+              href="https://nft.openvino.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="dropdown-item"
+            >
+             
+              <span class="item-text">
+                <strong>YDIYOI</strong>
+                <small>NFT Marketplace</small>
+              </span>
+            </a>
+            <a
+              href="https://viniswap.openvino.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="dropdown-item"
+            >
+             
+              <span class="item-text">
+                <strong>Viniswap</strong>
+                <small> Uniswap Fork </small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button class="nav-button">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+            </svg>
+            Social
+            <!-- <span class="youtube-badge">170K+</span> -->
+          </button>
+          <div class="dropdown">
+            <div class="social-links">
+              <a
+                href="https://youtube.com/@Nachitoodev"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+                YouTube
+              </a>
+             
+            
+              <a href="#" class="social-link" onclick="copyEmail(event)">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                Email
+              </a>
+            </div>
+          </div>
+        </div>
+      
+      </nav>
+    </div>
+
+    <!-- Background Testimonials -->
+    <div class="testimonials-bg" id="testimonials-bg"></div>
+
+    <!-- Snake Game Canvas -->
+    <canvas id="snake-canvas"></canvas>
+
+    <div class="toast" id="toast">Email copied!</div>
+
+    <script>
+      // Typewriter Animation
+      const words = ["build", "launch", "design", "code", "ship"];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const typingEl = document.getElementById("typing-text");
+
+      function type() {
+        const currentWord = words[wordIndex];
+
+        if (isDeleting) {
+          typingEl.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          typingEl.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+        }
+
+        let typeSpeed = isDeleting ? 60 : 120;
+
+        if (!isDeleting && charIndex === currentWord.length) {
+          typeSpeed = 2000;
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          typeSpeed = 400;
+        }
+
+        setTimeout(type, typeSpeed);
+      }
+
+      setTimeout(type, 600);
+
+      // Load theme from localStorage on page load
+      (function initTheme() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+          document.body.setAttribute("data-theme", savedTheme);
+        }
+      })();
+
+      function toggleTheme() {
+        const body = document.body;
+        const next =
+          body.getAttribute("data-theme") === "light" ? "dark" : "light";
+        body.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+        // Trigger a redraw for theme color updates with slight delay for CSS to apply
+        requestAnimationFrame(() => {
+          if (window.themeChangeCallback) {
+            window.themeChangeCallback();
+          }
+        });
+      }
+
+      function copyEmail(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        navigator.clipboard.writeText("arguellojuan08@gmail.com").then(() => {
+          const toast = document.getElementById("toast");
+          toast.classList.add("show");
+          setTimeout(() => toast.classList.remove("show"), 2000);
+        });
+      }
+
+      // Mobile touch logic
+      document.querySelectorAll(".nav-button").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          if (window.innerWidth <= 768) {
+            const item = btn.parentElement;
+            const isActive = item.classList.contains("mobile-active");
+            document
+              .querySelectorAll(".nav-item")
+              .forEach((i) => i.classList.remove("mobile-active"));
+            if (!isActive) {
+              e.preventDefault();
+              item.classList.add("mobile-active");
+            }
+          }
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".nav-item")) {
+          document
+            .querySelectorAll(".nav-item")
+            .forEach((i) => i.classList.remove("mobile-active"));
+        }
+      });
+
+      // ==========================================
+      // SNAKE GAME - Illuminates Testimonials
+      // ==========================================
+      const testimonials = [
+  [
+    "Code every day, even when you don't feel like it.",
+    "Discipline beats motivation in the long run.",
+    "Your future self is built by today's commits.",
+    "Consistency turns beginners into professionals."
+  ],
+  [
+    "Build. Break. Fix. Repeat.",
+    "Every bug is a lesson in disguise.",
+    "Success in tech is earned through persistence.",
+    "The only shortcut is showing up daily."
+  ],
+  [
+    "Your portfolio speaks louder than your resume.",
+    "Ship projects, not excuses.",
+    "Learn deeply, not quickly.",
+    "Focus beats talent every time."
+  ],
+  [
+    "Stack small wins until they become momentum.",
+    "Master the fundamentals, dominate the rest.",
+    "Hard things make strong developers.",
+    "The grind compounds."
+  ],
+  [
+    "Debug your code, not your dreams.",
+    "Pressure builds skill.",
+    "Comfort kills growth.",
+    "Think long term, code daily."
+  ],
+  [
+    "You're one project away from leveling up.",
+    "Execution > Ideas.",
+    "Great developers are made, not born.",
+    "Stay obsessed with improvement."
+  ],
+  [
+    "Build like nobody is watching. Launch like everybody is.",
+    "If it was easy, everyone would do it.",
+    "Clarity in logic creates power in systems.",
+    "Earn your confidence through repetition."
+  ],
+  [
+    "Stay dangerous. Stay curious.",
+    "Discipline is the ultimate flex.",
+    "Deep work creates deep skill.",
+    "The market rewards builders."
+  ],
+  [
+    "Don't chase hype. Chase mastery.",
+    "Small improvements daily = massive results yearly.",
+    "Your code reflects your mindset.",
+    "Commit to the craft."
+  ],
+  [
+    "Obsession beats talent.",
+    "Learn fast, execute faster.",
+    "Your habits are your edge.",
+    "Build systems, not just apps."
+  ],
+  [
+    "Failure is feedback.",
+    "Ship before you feel ready.",
+    "Momentum is built in silence.",
+    "Stay consistent when nobody claps."
+  ],
+  [
+    "You don't need permission to build.",
+    "Clarity > Complexity.",
+    "Stack skills like assets.",
+    "Invest in yourself daily."
+  ],
+  [
+    "Level up quietly.",
+    "The grind is invisible until it's undeniable.",
+    "Code is leverage.",
+    "Build things that matter."
+  ],
+  [
+    "Discomfort is a signal of growth.",
+    "Focus on output, not validation.",
+    "Builders win long term.",
+    "Sharpen your tools daily."
+  ],
+  [
+    "Your future income depends on today's discipline.",
+    "High standards create high results.",
+    "Stop consuming. Start creating.",
+    "Earn your skills."
+  ],
+  [
+    "Consistency compounds like interest.",
+    "Clarity of thought creates clean code.",
+    "Be relentless with improvement.",
+    "Skill is built in solitude."
+  ],
+  [
+    "Turn ambition into execution.",
+    "Work on what scares you.",
+    "The edge is in the details.",
+    "Refactor your life like you refactor code."
+  ],
+  [
+    "Stay hungry. Stay technical.",
+    "Your limits are self-imposed.",
+    "Outwork yesterday's version of you.",
+    "Build your legacy one commit at a time."
+  ]
+];
+
+      // Wrap text in character spans for per-character illumination
+      function wrapChars(text) {
+        return text
+          .split("")
+          .map((char) =>
+            char === " "
+              ? '<span class="testimonial-char">&nbsp;</span>'
+              : `<span class="testimonial-char">${char}</span>`,
+          )
+          .join("");
+      }
+
+      // Generate testimonial rows
+      const testimonialsBg = document.getElementById("testimonials-bg");
+
+      testimonials.forEach((row, rowIndex) => {
+        const rowEl = document.createElement("div");
+        rowEl.className = "testimonial-row";
+
+        // Stagger row offsets for visual variety
+        const offset = (rowIndex % 4) * 80;
+        rowEl.style.paddingLeft = offset + "px";
+
+        row.forEach((testimonial, index) => {
+          // Parse username and quote (format: "@username - quote text")
+          const parts = testimonial.split(" - ");
+          const username = parts[0];
+          const quote = parts.slice(1).join(" - "); // Rejoin in case quote contains " - "
+
+          const item = document.createElement("div");
+          item.className = "testimonial-item";
+
+          // Format: @username - "quote text"
+          const wrappedUsername = wrapChars(username);
+          const wrappedDash = `<span class="testimonial-char">&nbsp;</span><span class="testimonial-char">-</span><span class="testimonial-char">&nbsp;</span>`;
+          const wrappedQuote = `<span class="testimonial-char">"</span>${wrapChars(quote)}<span class="testimonial-char">"</span>`;
+
+          item.innerHTML = `<span class="testimonial-username">${wrappedUsername}</span>${wrappedDash}<span class="testimonial-quote">${wrappedQuote}</span>`;
+          rowEl.appendChild(item);
+
+          // Add separator dash between testimonials (not after the last one)
+          if (index < row.length - 1) {
+            const separator = document.createElement("span");
+            separator.className = "testimonial-separator";
+            separator.innerHTML =
+              '<span class="testimonial-char">&nbsp;</span><span class="testimonial-char">-</span><span class="testimonial-char">&nbsp;</span>';
+            rowEl.appendChild(separator);
+          }
+        });
+
+        testimonialsBg.appendChild(rowEl);
+      });
+
+      // Snake Game
+      const canvas = document.getElementById("snake-canvas");
+      const ctx = canvas.getContext("2d", { alpha: true });
+      // Disable image smoothing for crisp pixel art rendering
+      ctx.imageSmoothingEnabled = false;
+
+      const gridSize = 15;
+      const snakeLength = 4;
+      let snake = [];
+      let direction = { x: 1, y: 0 };
+      let nextDirection = { x: 1, y: 0 };
+
+      // Grid dimensions
+      let gridCols, gridRows, maxX, maxY, centerCol, centerRow;
+
+      function updateGridDimensions() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        // Restore context state after resize (canvas resize resets context)
+        ctx.imageSmoothingEnabled = false;
+        gridCols = Math.floor(canvas.width / gridSize);
+        gridRows = Math.floor(canvas.height / gridSize);
+        maxX = (gridCols - 1) * gridSize;
+        maxY = (gridRows - 1) * gridSize;
+        centerCol = Math.floor(gridCols / 2);
+        centerRow = Math.floor(gridRows / 2);
+      }
+      updateGridDimensions();
+
+      // Initialize snake in top half, moving right
+      function initSnake() {
+        snake = [];
+        // Start in upper portion, centered horizontally
+        const startX = centerCol * gridSize;
+        const startY = Math.floor(gridRows * 0.2) * gridSize;
+        for (let i = 0; i < snakeLength; i++) {
+          snake.push({ x: startX - i * gridSize, y: startY });
+        }
+        direction = { x: 1, y: 0 };
+        nextDirection = { x: 1, y: 0 };
+      }
+      initSnake();
+
+      // Arrow key controls
+      document.addEventListener("keydown", (e) => {
+        switch (e.key) {
+          case "ArrowUp":
+            if (direction.y !== 1) nextDirection = { x: 0, y: -1 };
+            e.preventDefault();
+            break;
+          case "ArrowDown":
+            if (direction.y !== -1) nextDirection = { x: 0, y: 1 };
+            e.preventDefault();
+            break;
+          case "ArrowLeft":
+            if (direction.x !== 1) nextDirection = { x: -1, y: 0 };
+            e.preventDefault();
+            break;
+          case "ArrowRight":
+            if (direction.x !== -1) nextDirection = { x: 1, y: 0 };
+            e.preventDefault();
+            break;
+        }
+      });
+
+      let cachedSnakeColor = null;
+
+      function getSnakeColor() {
+        if (!cachedSnakeColor) {
+          cachedSnakeColor = getComputedStyle(document.body)
+            .getPropertyValue("--snake-color")
+            .trim();
+        }
+        return cachedSnakeColor;
+      }
+
+      function updateSnakeColor() {
+        cachedSnakeColor = getComputedStyle(document.body)
+          .getPropertyValue("--snake-color")
+          .trim();
+      }
+
+      function updateSnake() {
+        direction = nextDirection;
+
+        // Calculate new head position
+        const head = snake[0];
+        let newX = head.x + direction.x * gridSize;
+        let newY = head.y + direction.y * gridSize;
+
+        // Wrap around edges (grid-aligned)
+        if (newX > maxX) newX = 0;
+        if (newX < 0) newX = maxX;
+        if (newY > maxY) newY = 0;
+        if (newY < 0) newY = maxY;
+
+        // Add new head
+        snake.unshift({ x: newX, y: newY });
+
+        // Remove tail
+        snake.pop();
+      }
+
+      // Food system
+      let food = null;
+      let isFirstFoodSpawn = true;
+
+      const foodAvoidRadius = 18; // Grid cells to avoid from center (main content area)
+
+      function spawnFood() {
+        // First food spawn: middle left area
+        if (isFirstFoodSpawn) {
+          isFirstFoodSpawn = false;
+          // Middle left: left 20%, vertically centered
+          const col = Math.floor(gridCols * 0.2);
+          const row = Math.floor(gridRows * 0.5);
+          food = { x: col * gridSize, y: row * gridSize };
+          return;
+        }
+
+        // Subsequent spawns: random but avoid center
+        for (let attempts = 0; attempts < 100; attempts++) {
+          const col = Math.floor(Math.random() * gridCols);
+          const row = Math.floor(Math.random() * gridRows);
+
+          // Avoid center area (uses pre-computed centerCol/centerRow)
+          if (
+            Math.abs(col - centerCol) + Math.abs(row - centerRow) <
+            foodAvoidRadius
+          )
+            continue;
+
+          const x = col * gridSize;
+          const y = row * gridSize;
+
+          // Avoid snake body
+          if (snake.some((seg) => seg.x === x && seg.y === y)) continue;
+
+          food = { x, y };
+          return;
+        }
+        food = { x: 0, y: 0 }; // Fallback
+      }
+
+      function checkFoodCollision() {
+        if (!food) return;
+        const head = snake[0];
+        if (head.x === food.x && head.y === food.y) {
+          // Grow snake by adding segment at tail
+          const tail = snake[snake.length - 1];
+          snake.push({ x: tail.x, y: tail.y });
+          spawnFood();
+        }
+      }
+
+      // Initialize food
+      setTimeout(spawnFood, 500);
+
+      let foodPulse = 0;
+
+      function drawSnake(timestamp) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        const color = getSnakeColor();
+        const size = gridSize - 2;
+        const radius = size / 3.5;
+
+        // Draw food with glow effect
+        if (food) {
+          foodPulse = (timestamp || 0) * 0.004;
+          const pulse = 0.9 + Math.sin(foodPulse) * 0.1;
+          const glowPulse = 0.4 + Math.sin(foodPulse) * 0.2;
+
+          // Outer glow layers
+          ctx.fillStyle = "#4ade80";
+          ctx.globalAlpha = glowPulse * 0.15;
+          ctx.beginPath();
+          ctx.roundRect(
+            food.x - 6,
+            food.y - 6,
+            size + 14,
+            size + 14,
+            radius + 4,
+          );
+          ctx.fill();
+
+          ctx.fillStyle = "#4ade80";
+          ctx.globalAlpha = glowPulse * 0.25;
+          ctx.beginPath();
+          ctx.roundRect(food.x - 3, food.y - 3, size + 8, size + 8, radius + 2);
+          ctx.fill();
+
+          // Main food
+          ctx.fillStyle = "#4ade80";
+          ctx.globalAlpha = pulse;
+          ctx.beginPath();
+          ctx.roundRect(food.x + 1, food.y + 1, size, size, radius);
+          ctx.fill();
+
+          // Inner highlight
+          ctx.fillStyle = "#86efac";
+          ctx.globalAlpha = pulse * 0.6;
+          ctx.beginPath();
+          ctx.roundRect(food.x + 3, food.y + 3, size - 4, size - 4, radius - 1);
+          ctx.fill();
+        }
+
+        // Draw snake with pixelated grid movement
+        snake.forEach((segment, index) => {
+          const alpha =
+            1 - Math.pow(index / Math.max(snake.length - 1, 1), 1.5) * 0.7;
+          ctx.fillStyle = color;
+          ctx.globalAlpha = alpha;
+          ctx.beginPath();
+          ctx.roundRect(segment.x + 1, segment.y + 1, size, size, radius);
+          ctx.fill();
+        });
+
+        ctx.globalAlpha = 1;
+      }
+
+      // Get theme colors for interpolation
+      function getColors() {
+        const style = getComputedStyle(document.body);
+        const hidden = style.getPropertyValue("--text-hidden").trim();
+        const revealed = style.getPropertyValue("--text-revealed").trim();
+        return { hidden, revealed };
+      }
+
+      // Parse color to RGB (handles both hex and rgb() formats)
+      function parseColor(color) {
+        // Try hex format
+        const hexResult = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(
+          color,
+        );
+        if (hexResult) {
+          return {
+            r: parseInt(hexResult[1], 16),
+            g: parseInt(hexResult[2], 16),
+            b: parseInt(hexResult[3], 16),
+          };
+        }
+        // Try rgb() format
+        const rgbResult = /rgb\((\d+),\s*(\d+),\s*(\d+)\)/.exec(color);
+        if (rgbResult) {
+          return {
+            r: parseInt(rgbResult[1]),
+            g: parseInt(rgbResult[2]),
+            b: parseInt(rgbResult[3]),
+          };
+        }
+        // Fallback
+        return { r: 128, g: 128, b: 128 };
+      }
+
+      // Interpolate between two colors
+      function lerpColor(color1, color2, t) {
+        const r = Math.round(color1.r + (color2.r - color1.r) * t);
+        const g = Math.round(color1.g + (color2.g - color1.g) * t);
+        const b = Math.round(color1.b + (color2.b - color1.b) * t);
+        return `rgb(${r},${g},${b})`;
+      }
+
+      // Cache character elements for performance
+      const charElements = document.querySelectorAll(".testimonial-char");
+      const charPositions = [];
+
+      function cacheCharPositions() {
+        charPositions.length = 0;
+        charElements.forEach((char) => {
+          const rect = char.getBoundingClientRect();
+          charPositions.push({
+            el: char,
+            x: rect.left + rect.width / 2,
+            y: rect.top + rect.height / 2,
+          });
+        });
+      }
+      cacheCharPositions();
+
+      // Cache colors for performance
+      let cachedColors = null;
+      let cachedHiddenRgb = null;
+      let cachedRevealedRgb = null;
+
+      // Pre-compute color strings for each intensity level (0-32 for smooth gradation)
+      const colorLevels = 32;
+      let colorLookup = [];
+      function buildColorLookup() {
+        colorLookup = [];
+        for (let i = 0; i <= colorLevels; i++) {
+          colorLookup.push(
+            lerpColor(cachedHiddenRgb, cachedRevealedRgb, i / colorLevels),
+          );
+        }
+      }
+
+      function updateColorCache() {
+        cachedColors = getColors();
+        cachedHiddenRgb = parseColor(cachedColors.hidden);
+        cachedRevealedRgb = parseColor(cachedColors.revealed);
+        updateSnakeColor();
+        buildColorLookup();
+
+        // Reset all character colors to new hidden color on theme change
+        if (charColorState) charColorState.fill(255);
+        charPositions.forEach(({ el }) => {
+          el.style.color = colorLookup[0];
+        });
+      }
+
+      // Set up theme change callback
+      window.themeChangeCallback = updateColorCache;
+
+      // Initialize color cache after DOM is ready and theme is set
+      // Use double requestAnimationFrame to ensure CSS is fully applied
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          updateColorCache();
+        });
+      });
+
+      // Illuminate characters near snake and food
+      const illuminationRadius = 170;
+      const foodIlluminationRadius = 180;
+      const illuminationRadiusSq = illuminationRadius * illuminationRadius;
+      const foodIlluminationRadiusSq =
+        foodIlluminationRadius * foodIlluminationRadius;
+
+      // Store previous color state to avoid unnecessary DOM updates (Uint8Array is faster than Map for numeric indices)
+      let charColorState = null; // Will be initialized after charPositions is populated
+
+      // Pre-allocated array for snake segment centers (avoids per-frame allocation)
+      let snakeCenters = new Float32Array(200); // x,y pairs - supports up to 100 segments
+
+      // Initialize color state array
+      function initColorState() {
+        charColorState = new Uint8Array(charPositions.length);
+        // 255 = uninitialized, forces first update
+        charColorState.fill(255);
+      }
+      initColorState();
+
+      function illuminateTestimonials() {
+        // Ensure colors are cached
+        if (!cachedColors || !cachedHiddenRgb || !cachedRevealedRgb) {
+          updateColorCache();
+          buildColorLookup();
+        }
+        if (colorLookup.length === 0) buildColorLookup();
+
+        const halfGrid = gridSize / 2;
+        const snakeLen = snake.length;
+
+        // Pre-compute snake segment centers and bounds in one pass
+        let minX = Infinity,
+          maxX = -Infinity,
+          minY = Infinity,
+          maxY = -Infinity;
+        for (let i = 0; i < snakeLen; i++) {
+          const seg = snake[i];
+          const cx = seg.x + halfGrid;
+          const cy = seg.y + halfGrid;
+          snakeCenters[i * 2] = cx;
+          snakeCenters[i * 2 + 1] = cy;
+          if (cx < minX) minX = cx;
+          if (cx > maxX) maxX = cx;
+          if (cy < minY) minY = cy;
+          if (cy > maxY) maxY = cy;
+        }
+
+        // Include food in bounds (fixed calculation)
+        const foodCenterX = food ? food.x + halfGrid : 0;
+        const foodCenterY = food ? food.y + halfGrid : 0;
+        if (food) {
+          const foodMinX = foodCenterX - foodIlluminationRadius;
+          const foodMaxX = foodCenterX + foodIlluminationRadius;
+          const foodMinY = foodCenterY - foodIlluminationRadius;
+          const foodMaxY = foodCenterY + foodIlluminationRadius;
+          if (foodMinX < minX) minX = foodMinX;
+          if (foodMaxX > maxX) maxX = foodMaxX;
+          if (foodMinY < minY) minY = foodMinY;
+          if (foodMaxY > maxY) maxY = foodMaxY;
+        }
+
+        const boundsMinX = minX - illuminationRadius;
+        const boundsMaxX = maxX + illuminationRadius;
+        const boundsMinY = minY - illuminationRadius;
+        const boundsMaxY = maxY + illuminationRadius;
+
+        // Process characters
+        const charLen = charPositions.length;
+        for (let index = 0; index < charLen; index++) {
+          const pos = charPositions[index];
+          const x = pos.x,
+            y = pos.y;
+
+          // Quick bounds check
+          if (
+            x < boundsMinX ||
+            x > boundsMaxX ||
+            y < boundsMinY ||
+            y > boundsMaxY
+          ) {
+            if (charColorState[index] !== 0) {
+              charColorState[index] = 0;
+              pos.el.style.color = colorLookup[0];
+            }
+            continue;
+          }
+
+          // Find minimum distance to snake using pre-computed centers
+          let minDistSq = Infinity;
+          for (let i = 0; i < snakeLen; i++) {
+            const dx = x - snakeCenters[i * 2];
+            const dy = y - snakeCenters[i * 2 + 1];
+            const distSq = dx * dx + dy * dy;
+            if (distSq < minDistSq) minDistSq = distSq;
+            if (distSq < 400) break; // Within ~20px, close enough for full intensity
+          }
+
+          // Calculate snake intensity
+          let intensity = 0;
+          if (minDistSq < illuminationRadiusSq) {
+            intensity = 1 - Math.sqrt(minDistSq) / illuminationRadius;
+          }
+
+          // Calculate food intensity
+          let foodIntensity = 0;
+          if (food) {
+            const dx = x - foodCenterX;
+            const dy = y - foodCenterY;
+            const foodDistSq = dx * dx + dy * dy;
+            if (foodDistSq < foodIlluminationRadiusSq) {
+              foodIntensity =
+                1 - Math.sqrt(foodDistSq) / foodIlluminationRadius;
+            }
+          }
+
+          // Combined intensity with smooth easing
+          const combined = Math.max(intensity, foodIntensity);
+          // Smoothstep easing for natural illumination (Hermite interpolation)
+          const eased =
+            combined > 0 ? combined * combined * (3 - 2 * combined) : 0;
+          const quantized = Math.round(eased * colorLevels);
+
+          if (charColorState[index] !== quantized) {
+            charColorState[index] = quantized;
+            pos.el.style.color = colorLookup[quantized];
+          }
+        }
+      }
+
+      // Snake head hover detection
+      const navItems = document.querySelectorAll(".nav-item");
+      const dropdownItems = document.querySelectorAll(
+        ".dropdown-item, .social-link",
+      );
+      let currentHoveredNav = null;
+      let currentHoveredDropdownItem = null;
+      let hoverTimeout = null;
+
+      function checkSnakeNavHover() {
+        const head = snake[0];
+        const hx = head.x + gridSize / 2;
+        const hy = head.y + gridSize / 2;
+
+        // Check nav buttons
+        let foundNav = null;
+        for (const nav of navItems) {
+          const r = nav.getBoundingClientRect();
+          if (
+            hx >= r.left - 15 &&
+            hx <= r.right + 15 &&
+            hy >= r.top - 15 &&
+            hy <= r.bottom + 15
+          ) {
+            foundNav = nav;
+            break;
+          }
+        }
+
+        // Check if snake is in dropdown area (including gap between button and dropdown)
+        let inDropdownArea = false;
+        if (currentHoveredNav) {
+          const dropdown = currentHoveredNav.querySelector(".dropdown");
+          if (dropdown) {
+            const r = dropdown.getBoundingClientRect();
+            // Extend bounds down to include the gap to the button
+            if (
+              hx >= r.left - 10 &&
+              hx <= r.right + 10 &&
+              hy >= r.top - 10 &&
+              hy <= r.bottom + 50
+            ) {
+              inDropdownArea = true;
+            }
+          }
+        }
+
+        // Check dropdown items (only visible ones)
+        let foundItem = null;
+        for (const item of dropdownItems) {
+          const r = item.getBoundingClientRect();
+          if (r.width === 0) continue;
+          if (hx >= r.left && hx <= r.right && hy >= r.top && hy <= r.bottom) {
+            foundItem = item;
+            break;
+          }
+        }
+
+        // Update dropdown item hover
+        if (foundItem !== currentHoveredDropdownItem) {
+          if (currentHoveredDropdownItem)
+            currentHoveredDropdownItem.classList.remove("snake-hover");
+          if (foundItem) foundItem.classList.add("snake-hover");
+          currentHoveredDropdownItem = foundItem;
+        }
+
+        // Update nav hover
+        if (foundNav !== currentHoveredNav) {
+          if (hoverTimeout) {
+            clearTimeout(hoverTimeout);
+            hoverTimeout = null;
+          }
+          if (foundNav) {
+            if (currentHoveredNav)
+              currentHoveredNav.classList.remove("snake-hover");
+            foundNav.classList.add("snake-hover");
+            currentHoveredNav = foundNav;
+          } else if (!foundItem && !inDropdownArea) {
+            const toRemove = currentHoveredNav;
+            hoverTimeout = setTimeout(() => {
+              if (toRemove) toRemove.classList.remove("snake-hover");
+              if (currentHoveredNav === toRemove) currentHoveredNav = null;
+            }, 300);
+            currentHoveredNav = null;
+          }
+        }
+      }
+
+      // Game loop with smooth timing
+      let lastUpdate = 0;
+      let lastIllumination = 0;
+      const updateInterval = 70; // Snake speed (lower = faster)
+      const illuminationInterval = 50; // Illumination update rate (let CSS transitions handle smoothing)
+
+      function gameLoop(timestamp) {
+        if (timestamp - lastUpdate >= updateInterval) {
+          updateSnake();
+          checkFoodCollision();
+          lastUpdate = timestamp;
+        }
+        drawSnake(timestamp);
+        // Throttle illumination updates to let CSS transitions create smooth animations
+        if (timestamp - lastIllumination >= illuminationInterval) {
+          illuminateTestimonials();
+          lastIllumination = timestamp;
+        }
+        checkSnakeNavHover();
+        requestAnimationFrame(gameLoop);
+      }
+
+      // Start game loop after a brief delay for smooth initialization
+      setTimeout(() => requestAnimationFrame(gameLoop), 100);
+
+      // Debounced resize handler - consolidates all resize logic
+      let resizeTimeout = null;
+      window.addEventListener("resize", () => {
+        if (resizeTimeout) clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          updateGridDimensions();
+          cacheCharPositions();
+          initColorState(); // Reinitialize color state array for new char positions
+          initSnake();
+          isFirstFoodSpawn = true; // Reset flag so food spawns in middle left
+          spawnFood();
+          // Clear snake hover states
+          if (currentHoveredNav) {
+            currentHoveredNav.classList.remove("snake-hover");
+            currentHoveredNav = null;
+          }
+          if (currentHoveredDropdownItem) {
+            currentHoveredDropdownItem.classList.remove("snake-hover");
+            currentHoveredDropdownItem = null;
+          }
+        }, 150);
+      });
+    </script>
+  </body>
+</html>
